@@ -1,165 +1,94 @@
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: 'StratosSkyeng', sans-serif;
-    background-color: #0F0804;
 }
 
-.header {
-    height: 100vh;
-    background-image: url(images/13.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.title {
+    padding-top: 128px;
+    margin-bottom: 32px;
 }
 
-.header__overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 80.49%, #0F0804 100%);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.main-img {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 24px;
 }
 
-.header__title {
-    margin: auto;
-    font-size: 96px;
-    text-align: center;
+.main-text {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.list-title {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.next-page {
+    background-color: #894AFF;
     color: white;
-    max-width: 658px;
-    font-weight: 400;
-}
-
-.header__link {
-    height: 90px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.17);
-    backdrop-filter: blur(11.5px);
-}
-
-.header__link:hover {
-    opacity: .8;
-}
-
-.header__anchor {
+    padding: 11px 30px;
+    border-radius: 50px;
     text-decoration: none;
-    color: white;
-    font-size: 24px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gallery {
-    /* Выключает точки у списка */
-    list-style-type: none;
-    margin: 173px auto;
-
-    display: flex;
-    max-width: 1060px;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 35px;
-
-}
-
-.gallery__item:hover::after, .gallery__item:hover .image__title {
-    display: block;
-}
-
-.image__title {
-    max-width: 260px;
-    font-size: 24px;
-    text-align: center;
-    color: white;
+    font-size: 38px;
     position: absolute;
-    z-index: 1;
-    display: none;
+    right: 100px;
+    top: 24px;
 }
 
-.gallery__item::after {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.65);
+.prev-page {
+    background-color: #894AFF;
     color: white;
-    width: 100%;
-    height: 100%;
-    display: none;
+    padding: 11px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 38px;
+    position: absolute;
+    left: 100px;
+    top: 24px;
 }
 
-.image__like {
-    width: 39px;
-    background-image: url(./img/лайк.svg);
+.in-one-line {
+    display: flex;
+    gap: 32px;
 }
 
-.image__like:hover {
-    background-image: url(./img/Like_active.svg);
-}
-
-.image__choosen {
-    width: 30px;
-    background-image: url(./img/Choosen.svg);
-}
-
-.image__choosen:hover {
-    background-image: url(./img/Choosen_active.svg);
-}
-
-.image__button {
-    border: none;
-    background-color: transparent;
+.meme-img {
+    width: 40%;
+    border-radius: 12px;
+    margin: 16px 0px;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 32px;
-    cursor: pointer;
 }
 
-.image__buttons {
-    position: absolute;
-    right: 27px;
-    bottom: 24px;
+.title {
+    padding-top: 128px;
+    margin-bottom: 32px;
+}
+
+.in-one-line {
     display: flex;
-    gap: 21px;
-    z-index: 5;
+    gap: 32px;
 }
 
-.gallery__item {
-    max-width: 330px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.name {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.listEl {
+    text-align: left;
+    font-size: 22px;
+    padding-bottom: 24px;
 }
 
-.image {
-    width: 100%;
-}
-
-.footer {
-    height: 100vh;
-    background-image: url(./images/7.png);
-    background-position: left;
+.content {
+    background-image: url(/background.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-}
-
-.footer__overlay {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(180deg, #0F0804 0%, rgba(0, 0, 0, 0.6) 100%);
-}
-
-.footer__text {
-    margin: auto;
-    font-size: 40px;
-    color: white;
+    min-height: 100vh;
+    position: relative;
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
 }
