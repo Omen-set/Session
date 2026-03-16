@@ -1,23 +1,97 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My_personal_page</title>
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="content">
-        <h1 class="title">Крутая личная страница</h1>
-        <p class="name"><b>Холодков Егор</b></p>
-        <div class="in-one-line"><img src="/520e0d6c-8067-4832-8c46-867f35f20f16.jpg" alt="Крутая картинка профиля" class="main-img">
-        <p class="main-text">Привет. Это мой проект по изучению фронта, и в нём я хочу рассказать о себе крутые факты и потренировать мой код стайл.</p></div>
-        <p class="list-title">На страничках ты найдешь</p>
-        <ul>
-            <li class="listEl">Крутые факты обо мне</li>
-            <li class="listEl">Мои любимые мемы</li>
-            <li class="listEl">Мои любимые цитаты</li>
-        </ul>
-        <a href="facts.html" class="next-page">Следующая страница&gt;&gt;&gt;&gt;</a>
+        <section class="hero-page">
+         <header>
+        <nav class="main-nav">
+            <a href="/catalog" class="nav-link">Каталог</a>
+            <a href="/cart" class="nav-link">Корзина</a>
+        </nav>
+    </header>
+    
+    <div class="hero-content">
+        <h1 class="hero-title">Интерьер.</h1>
+        <p class="hero-slogan">Всё, чего заслуживает ваш дом</p>
+        <p class="hero-description">Наша мебель — ваше отражение</p>
+        <a href="/catalog" class="hero-button">Перейти в каталог</a>
     </div>
+    </section>
 
-</body></html>
+    <section class="products">
+        <h2 class="title">
+            <!-- Здесь будет заголовок "Наши товары" -->
+        </h2>
+        <article class="product">
+            <section class="catalog">
+        <div class="center">
+            <h2 class="catalog__title">Каталог товаров</h2>
+            <div class="catalog__grid">
+
+                <div class="product-card">
+                    <img src="images/Кровать Tatran.png" alt="Кровать TATRAN" class="product-card__image">
+                    <h3 class="product-card__title">Кровать TATRAN</h3>
+                    <p class="product-card__description">Основание из полированной нержавеющей стали, придает оригинальной паршившей эффект.</p>
+                    <p class="product-card__price">120 000 руб.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Кресло Virola.png" alt="Кресло VILORA" class="product-card__image">
+                    <h3 class="product-card__title">Кресло VILORA</h3>
+                    <p class="product-card__description">Мягкие и уютные, аккуратные и стильные. Упругие подушки сидений и приятные на ощупь тени.</p>
+                    <p class="product-card__price">21 000 руб.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Стол Menu.png" alt="Стол MENU" class="product-card__image">
+                    <h3 class="product-card__title">Стол MENU</h3>
+                    <p class="product-card__description">Для того чтобы распознавать было приятно, необходимо правильно обдумывать стол.</p>
+                    <p class="product-card__price">34 000 руб.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Asceta Кресло.png" alt="Кресло ASKESTA" class="product-card__image">
+                    <h3 class="product-card__title">Кресло ASKESTA</h3>
+                    <p class="product-card__description">Высококачественный полнополированный кресло с мягким дизайном и двойными стойками.</p>
+                    <p class="product-card__price">68 000 руб.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Norman Стол.png" alt="Стол NORMAN" class="product-card__image">
+                    <h3 class="product-card__title">Стол NORMAN</h3>
+                    <p class="product-card__description">Прекрасно переносит солнечные лучи, передавая влажность и любые осадки.</p>
+                    <p class="product-card__price">40 000 руб.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Диван Nastaf.png" alt="Диван NASTAN" class="product-card__image">
+                    <h3 class="product-card__title">Диван NASTAN</h3>
+                    <p class="product-card__description">Модный офисный просторный диван с мягкими стульями и посудомоечной машиной.</p>
+                    <p class="product-card__price">80 000 руб.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+        </article>
+        <!-- Можно добавить еще article class="product" -->
+    </section>
+
+    <footer class="footer">
+        <div class="footer__overlay">
+            <p class="footer__text">Сайт был сверстан Холодковым Егором</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
